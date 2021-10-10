@@ -1,0 +1,652 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left-nav {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 255, 255);
+    cursor: pointer;
+}
+
+.left-nav.active {
+    background-color: #fff;
+}
+
+.right-nav {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:#fff;
+}
+
+.right-nav.active {
+    background-color: rgb(189, 255, 255);
+}
+
+nav {
+    border-bottom: 2px solid rgb(80, 43, 43);
+}
+
+h2 {
+    font-weight: 900;
+}
+
+.login-form {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.login-form.active {
+    display: none;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7em;
+}
+
+.email label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.email input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.email input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.forgot-password {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.forgot-password p {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-password label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login-password input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.login-password input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.login-btn {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 130px;
+    padding: .5em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(0, 140, 255);
+    margin-bottom: 2em;
+}
+
+.login-btn p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.signup-form {
+    display: none;
+    padding: 1.5em;
+    flex-direction: column;
+}
+
+.signup-form.active {
+    display: flex;
+}
+
+.first-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.third-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.fourth-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.fifth-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.fullname {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.fullname  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fullname input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.fullname  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.phonenumber {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2em;
+    height: 100%;
+}
+
+.phonenumber  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.phonenumber input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.phonenumber  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.email-id {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    justify-content: flex-start;
+}
+
+.email-id  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.email-id  input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.email-id  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.password  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.password input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.password  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.phonenumber {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.phonenumber  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.phonenumber input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.phonenumber  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.address  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.address input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.address  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.pincode {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.pincode  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pincode input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.pincode  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.city  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.city input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.city  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.district {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.district  label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.district input {
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.3em;
+    background-color: rgb(189, 255, 255);
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    width: 88vw;
+}
+
+.district  input::placeholder {
+    color: #000;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.signup-btn {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 130px;
+    padding: .5em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(0, 140, 255);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.signup-btn p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1100px){
+    
+    .email input {
+        width: 96vw;
+    }
+
+    .login-password input {
+        width: 96vw;
+    }
+
+    .login-btn {
+        margin-top: 5em;
+        height: 50px;
+        border-radius: 11px;
+    }
+
+    .first-sec {
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .third-sec {
+        display: flex;
+        flex-direction: row;
+    }
+    .fourth-sec {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fifth-sec {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fullname {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+    }
+
+    .fullname input {
+        width: 47vw;
+    }
+
+    .phonenumber {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    .phonenumber input {
+        width: 47vw;
+    }
+
+    .email-id input {
+        width: 96vw;
+    }
+
+    .password {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+    }
+
+    .password input {
+        width: 47vw;
+    }
+
+    .phonenumber {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    .phonenumber input {
+        width: 47vw;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+    }
+
+    .address input {
+        width: 47vw;
+    }
+
+    .pincode {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    .pincode input {
+        width: 47vw;
+    }
+
+    .city {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+    }
+
+    .city input {
+        width: 47vw;
+    }
+
+    .district {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    .district input {
+        width: 47vw;
+    }
+
+    .signup-btn {
+        margin-top: 5em;
+        height: 50px;
+        border-radius: 11px;
+    }
+}
